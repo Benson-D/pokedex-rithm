@@ -29,10 +29,10 @@ function Pokegame() {
   return (
     < div >
       <Pokedex pokemonList={hand1} />
-      {(hand1Exp > hand2Exp) ? <h3>THIS HAND WINS WITH TOTAL EXP OF {hand1Exp}!!!!!!!!!!</h3> : null}
+      {(hand1Exp > hand2Exp) ? <h3>THIS HAND WINS WITH TOTAL EXP OF {hand1Exp}!!!!!!!!!!</h3> : <p>You lost with total experience of {hand1Exp} :'( </p>}
       <hr></hr>
       <Pokedex pokemonList={hand2} />
-      {(hand1Exp < hand2Exp) ? <h3>THIS HAND WINS WITH TOTAL EXP OF {hand2Exp}!!!!!!!!!!</h3> : null}
+      {(hand1Exp < hand2Exp) ? <h3>THIS HAND WINS WITH TOTAL EXP OF {hand2Exp}!!!!!!!!!!</h3> : <p>You lost with total experience of {hand2Exp} :'( </p>}
     </div >
   )
 }
