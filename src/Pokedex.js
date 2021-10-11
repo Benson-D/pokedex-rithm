@@ -1,7 +1,8 @@
 import React from "react";
 import PokeCard from "./PokeCard";
 
-function Pokedex({ pokemonList }) {
+/** creates divs for each pokemon in pokemonList, passed in as prop */
+function Pokedex({ pokemonList, totalExp }) {
   return (
     <div>
       {pokemonList.map((pokemon) => (
